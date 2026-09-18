@@ -6,7 +6,7 @@
 > ### This is a modified fork
 >
 > Fork of [truenas/truenas-proxmox-plugin](https://github.com/truenas/truenas-proxmox-plugin),
-> modified by **IDK MANAGER** in August 2026 (patch series `idk6`, `idk7` and `idk8`).
+> modified by **[IDK MANAGER](https://idkmanager.com/)** in August 2026 (patch series `idk6`, `idk7` and `idk8`).
 > What differs from upstream, and why, is documented in [DIVERGENCE-IDK.md](DIVERGENCE-IDK.md).
 >
 > Two of the fixes in this fork are proposed back upstream in
@@ -14,6 +14,12 @@
 > work against TrueNAS SCALE 25.10 because discovery-CHAP became implicit and the main login
 > loop in `_iscsi_login_all` was dead code, so every session silently fell through to an
 > unauthenticated fallback.
+>
+> **Implementation notes:** [IDK MANAGER's CHAP investigation and field verification](https://idkmanager.com/blog/plugin-truenas-proxmox-nvme-tcp-chap-iscsi/)
+> describes the failure, the fixes and the verification performed for this fork.
+> [Alfonso Kuen Arroyo](https://idkmanager.com/equipo/alfonso-kuen-arroyo/)
+> submitted the upstream proposal. Follow PR #95 for its review status; this fork's
+> documentation does not imply upstream acceptance or endorsement.
 >
 > **Upstream does not support this copy.** Report anything you find here against this
 > repository, not against the TrueNAS project. Links to `truenas/...` further down this README
